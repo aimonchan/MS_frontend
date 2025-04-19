@@ -1,8 +1,91 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #000000;
+}
+
+@theme{
+  --container-padding: 15px;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --font-primary: "Objectivity Medium", sans-serif;
+  --font-secondary: "CenturyGothic", sans-serif;
+  --font-tertiary: "JakartaSansLight", sans-serif;
+  --color-primary: #F8951E;
+  --color-secondary: #5B5B5B;
+  --color-primary: #101828;
+  --color-grayborder: #c4c4c4
+  --color-amctwo: #171717;
+  --color-accent: #F8951E;
+  --color-accent-hover: #dd242a;
+  --color-body: #dedede;
+  --color-heading: #101828;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@layer base {
+  body{
+    @apply text-primary bg-body;
+  }
+  p{
+    @apply text-secondary;
+    font-size: var(--font-secondary-size);
+  }
+  .h1{
+    @apply font-primary font-medium text-[50px] md:text-[64px] drop-shadow-lg leading-tight;
+    text-shadow: 
+      1px 1px 0 rgba(0, 0, 0, 1), /* Bottom-right */
+     -1px -1px 0 rgba(0, 0, 0, 1), /* Top-left */
+      1px -1px 0 rgba(0, 0, 0, 1), /* Bottom-left */
+     -1px 1px 0 rgba(0, 0, 0, 1); /* Top-right */
+  }
+  .h2{
+    @apply font-primary font-medium text-[40px] text-[#f8951e] uppercase;
+  }
+  .h3{
+    @apply font-tertiary xl:text-[16px] text-[14px];
+  }
+  .h4{
+    @apply font-tertiary font-medium text-[14px];
+  }
+  .description{
+    @apply font-secondary xl:text-[18px];
+  }
+  .section{
+    @apply w-full h-screen pt-[68px] xl:pt-[120px];
+  }
+  .btn{
+    @apply rounded-[20px] w-[210px] h-[44px] bg-[#F8951E] font-tertiary text-black font-bold tracking-[2px] text-[16px] flex justify-center items-center transition-all duration-300 z-50 cursor-pointer;
+  }
+  .scndbtn{
+    @apply rounded-[20px] w-[210px] h-[44px] border border-[#c4c4c4] font-tertiary text-accent font-bold tracking-[2px] text-[16px] flex justify-center items-center transition-all duration-300 z-50 cursor-pointer;
+  }
+  .btn-sm{
+    @apply h-14;
+  }
+  .btn-lg{
+    @apply h-16;
+  }
+  .btn-cta{
+    @apply bg-primary h-[54px] rounded-[5px] px-4 transition-all duration-300;
+  }
+  .btn-primary{
+    @apply bg-primary;
+  }
+  .btn-secondary{
+    @apply bg-secondary;
+  }
+  .btn-accent{
+    @apply bg-accent hover:bg-accent-hover;
+  }
+  .active{
+    @apply text-accent;
+  }
 }
 
 @theme inline {
@@ -14,13 +97,46 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #5b5b5b;
     --foreground: #ededed;
+    --secondground: #171717;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Objectivity, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "JakartaSansLight";
+  src: url("/fonts/PlusJakartaSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Objectivity";
+  src: url("/fonts/objectivity.medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "IvyMode";
+  src: url("/fonts/ivy-mode-7.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "CenturyGothic";
+  src: url("/fonts/GOTHIC.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+img:hover {
+  filter: none !important;
 }

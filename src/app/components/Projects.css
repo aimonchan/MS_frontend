@@ -1,0 +1,8 @@
+/* Projects.css */
+img {
+  filter: brightness(0.8); /* To match the dimmed image effect in the UI */
+}
+
+img:hover {
+  filter: brightness(1);
+}

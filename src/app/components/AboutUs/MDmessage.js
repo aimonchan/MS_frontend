@@ -1,0 +1,57 @@
+"use client";
+
+import { useState } from 'react';
+import Image from 'next/image';
+
+const MDmessage = () => {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
+  return (
+    <section className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden md:h-auto xl:h-[877px] lg:h-[807px] flex flex-col items-center text-white h-[1185px]">
+      
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center h-full"
+        style={{ backgroundImage: 'url(/images/aboutus.webp)', opacity: 0.3 }}
+      ></div>
+
+
+      {/* Black overlay */}
+      <div className="absolute inset-0 bg-black opacity-16"></div>
+
+
+      {/* Text Content */}
+      <div className="mt-[140px] relative z-10 text-center px-4 sm:px-6 md:px-10 lg:px-16">
+        <h1 className="h2 text-center xl:mt-[61px]">Message from Our Managing Director</h1>
+      </div>
+
+      {/* Content Layout */}
+      <div className="relative z-10 flex flex-col justify-center  lg:flex-row lg:justify-center lg:items-center mt-3 lg:mt-10 gap-6 lg:gap-10">
+
+        {/* Right Image Mobile */}
+        <div 
+          className="block md:hidden w-[300px] h-[350px] sm:w-80 md:w-96 lg:w-[400px] lg:h-[528px] sm:h-72 md:h-80  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
+          style={{ backgroundImage: "url(/images/MD.webp)" }}
+        ></div>
+        
+        {/* Features Section */}
+        <div className="w-full max-w-lg px-4 sm:px-6 md:px-10 lg:px-0 flex flex-col gap-6">
+          <p className='text-justify description text-white'>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+          </p>
+        </div>
+
+        {/* Right Image Mobile */}
+        <div 
+          className="hidden md:block w-[300px] h-[350px] sm:w-80 md:w-96 lg:w-[400px] lg:h-[528px] sm:h-72 md:h-80  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
+          style={{ backgroundImage: "url(/images/MD.webp)" }}
+        ></div>
+
+      </div>
+    </section>
+  );
+};
+
+export default MDmessage;

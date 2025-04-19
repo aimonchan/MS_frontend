@@ -1,0 +1,17 @@
+/* hero-slider.css */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffffff !important;
+  opacity: 0.7;
+  margin: 0 4px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #F8951E !important;
+  opacity: 1;
+}
+
+/* .swiper-wrapper {
+  transition-duration: 0.5s !important;
+} */
