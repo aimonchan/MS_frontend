@@ -18,7 +18,7 @@ import Test from "./components/Test";
 import TestTwo from "./components/TestTwo";
 import OurLocation from "./components/GoogleMap";
 import ProductDetail from "./components/DetailProject";
-import TestRooCode from "./components/TestRooCode"; // Import the new component
+import TestRooCode from "./components/TestRooCode";
 
 export default function Home() {
   return (
@@ -38,8 +38,8 @@ export default function Home() {
       <Blogs />
       <Cta />
       <OurLocation />
+      <TestRooCode />
       {/* <TestTwo/> */}
-      {/* <TestRooCode /> */} {/* Add the new component here */}
       <Footer />
       <BackToTopBtn/>
     </main>
