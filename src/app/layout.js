@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en"
     suppressHydrationWarning="true"
     data-qb-installed="true"
+    style={{ colorScheme: 'light' }}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
