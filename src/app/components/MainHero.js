@@ -1,34 +1,3 @@
-// "use client";
-
-// import { useContext } from 'react';
-
-// import MainButton from '../components/MainButton';
-
-// //next image
-// import Image from 'next/image';
-
-// //motion
-// import { motion, easeInOut } from 'framer-motion';
-// import SwiperHero from './SwiperHero';
-
-
-// const Hero = () => {
-
-//     const handleClick = () => {
-//         alert('Button clicked!');
-//       };
-//     // const { searchActive } = useContext(SearchContext);
-//     return (
-//         <section
-//         className="border border-grayborder mt-[10px] mx-[17.5px] rounded-[20px] xl:h-[622px] lg:h-[622px] md:h-[140px] sm:h-[85px] overflow-hidden bg-black"
-//         >
-//             <SwiperHero/>
-//         </section>
-//     );
-// };
-
-// export default Hero;
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -114,7 +83,7 @@ const TestTwo = () => {
                     initial="hidden"
                     animate="show"
                     exit="exit" 
-                    className="h1 text-center">{activeData.title}
+                    className="h1 text-center text-white">{activeData.title}
                     </motion.h1>
                 </AnimatePresence>
            
@@ -126,7 +95,7 @@ const TestTwo = () => {
                     initial="hidden"
                     animate="show"
                     exit="exit" 
-                    className="description text-center">{activeData.desc}
+                    className="description text-center text-white">{activeData.desc}
                 </motion.h3>
             </AnimatePresence>
             </div>
