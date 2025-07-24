@@ -8,7 +8,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 {/* Team Member Card */}
 const TeammemberCard = ({image, name, position, description})=>{
   return (
-    <div className='border border-grayborder p-6 rounded-[24px] shadow-lg text-center w-[341px] h-[720px] md:w-[388px] md:h-[535px]'>
+    <div className='border border-grayborder p-6 rounded-[24px] shadow-lg text-center w-[341px] h-[535px] md:w-[388px] md:h-[535px]'>
       <img 
       alt=""
       className='border border-grayborder w-[208px] h-[208px] mx-auto rounded-full mb-4 object-cover' 
@@ -43,7 +43,7 @@ const TeamMembers = () => {
  return (
     
     <section
-            className="border border-grayborder mt-[20px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px]  md:h-[1542.76px] sm:h-[85px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black"
+            className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px]  md:h-[1542.76px] sm:h-[85px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black"
         >
 
           {/* Background image */}

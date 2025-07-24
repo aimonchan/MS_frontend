@@ -13,7 +13,7 @@ const Testimonial = () => {
     return (
         <section
             id='testimonial'
-            className="border border-grayborder mt-[20px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[140px] h-screen flex flex-col md:items-center md:justify-center overflow-hidden bg-black my-auto py-[100px] md:py-0"
+            className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[140px] h-screen flex flex-col md:items-center md:justify-center overflow-hidden bg-black my-auto py-[100px] md:py-0"
         >
             {/* Background image */}
               <div

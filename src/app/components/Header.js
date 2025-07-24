@@ -71,7 +71,7 @@ const Header = () => {
       {/* Header with logo and navigation */}
       <header
         className={`${header ? 'bg-gray-500/10 backdrop-blur-md shadow-md py-2 md:py-2 border-gray-200/20' : 'bg-transparent shadow-none py-2 md:py-2'}
-        fixed top-0 left-0 right-0 z-50 mt-[10px] mx-[5px] md:mx-[17.5px] rounded-tr-[20px] rounded-tl-[20px] border xl:h-[140px] lg:h-[140px] md:h-[140px] sm:h-[85px] xl:flex transition-all duration-300`}
+        fixed top-0 left-0 right-0 z-50 md:mt-[10px] mt-[5px] mx-[5px] md:mx-[17.5px] rounded-tr-[20px] rounded-tl-[20px] border xl:h-[140px] lg:h-[140px] md:h-[140px] sm:h-[85px] xl:flex transition-all duration-300`}
       >
         <div className="xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between">
           <div className="flex justify-between items-center px-4">

@@ -14,7 +14,7 @@ import { DialogTitle } from '@headlessui/react';
 
 const BlogCard = ({id,image, title, description})=>{
     return(
-        <div className="bg-white/2 backdrop-blur-lg border border-grayborder rounded-lg shadow-lg p-4 items-center w-[640px] h-[360px] flex flex-col md:flex md:flex-row md:space-x-6">
+        <div className="bg-white/2 backdrop-blur-lg border border-grayborder rounded-lg shadow-lg p-4 items-center md:w-[640px] md:h-[360px] w-[320px] h-[600px] flex flex-col md:flex md:flex-row md:space-x-6">
             <div className='w-[264px] h-[300px]'>
               <img src={image} alt={title} className="w-full h-full object-cover rounded-lg" />
             </div>
@@ -31,7 +31,7 @@ const Blog = () => {
 
     return (
         <section
-            className="border border-grayborder mt-[20px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[140px] sm:h-[85px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black"
+            className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[140px] sm:h-[85px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black"
         >
             {/* Background image */}
             <div
@@ -94,7 +94,7 @@ const Blog = () => {
                                                   ))}
                                           </Swiper>
                   
-                    <MainButton className='mx-auto mt-[68px]'>Show More!</MainButton>
+                    <MainButton className='mx-auto my-[30px]'>Show More!</MainButton>
                   
         </div>
       </div>

@@ -2,7 +2,7 @@ export default function TestimonialCard({image, name, location, rating, testimon
   return (
     <div>
       {/* Testimonial 1 */}
-        <div className="bg-white/1 backdrop-blur-lg p-6 rounded-lg border border-orange-500 w-[400px] h-[230px] cursor-pointer">
+        <div className="bg-white/1 backdrop-blur-lg p-6 rounded-lg border border-orange-500 md:w-[400px] w-[280px] md:h-[230px] h-[400px]cursor-pointer">
         <div className="flex items-center mb-4">
             <img
                 alt="Profile picture of Viez Robert"
