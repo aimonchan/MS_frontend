@@ -45,7 +45,7 @@ const TestTwo = () => {
     // const { searchActive } = useContext(SearchContext);
     return (
         <section
-        className="border border-grayborder mt-[10px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] md:h-[622px] h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+        className="border border-grayborder mt-[10px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] md:h-[622px] h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
         
         {/* Background image */}
         <div

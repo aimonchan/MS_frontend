@@ -13,7 +13,7 @@ const AboutUs = () => {
   };
 
   return (
-    <section className="py-[80px] px-2 md:px-0 md:py-0 border border-grayborder mt-[20px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden 
+    <section className="py-[80px] px-2 md:px-0 md:py-0 border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden 
       sm:h-auto md:h-auto xl:h-[807px] lg:h-[807px] flex flex-col items-center text-white">
       
       {/* Background Image */}
