@@ -38,10 +38,10 @@ export default function Home() {
       <Blogs />
       <Cta />
       <OurLocation />
-      <TestRooCode />
+      {/* <TestRooCode /> */}
       {/* <TestTwo/> */}
       <Footer />
-      <BackToTopBtn/>
+      {/* <BackToTopBtn/> */}
     </main>
   );
 }

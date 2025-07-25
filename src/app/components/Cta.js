@@ -84,7 +84,7 @@ const ContactUs = () => {
                   </div>
 
                   {/* Form Section */}
-                  <div className="p-6 rounded-lg z-10">
+                  <div className="p-1 rounded-lg z-10">
                     <form onSubmit={handleSubmit}>
                       <div className="space-y-4">
                         <input
