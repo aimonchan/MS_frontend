@@ -83,7 +83,7 @@ const Footer = () => {
             <a href="#" className="text-gray-300 hover:text-white">Terms and Conditions</a> |{' '}
             <a href="#" className="text-gray-300 hover:text-white">Privacy Policy</a>
           </p>
-          <p>Copyright © 2025 by Digital Realestate</p>
+          <p>Copyright © 2025 by Modern Space Furnishing & Decoration Co.,Ltd (Myanmar)</p>
         </div>
       </div>
     </footer>
