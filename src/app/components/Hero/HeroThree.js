@@ -37,7 +37,7 @@ const HeroTwo = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: 'url(/images/hero_three.webp)', // Make sure this path is correct
+                    backgroundImage: 'url(/images/newhero_3.webp)', // Make sure this path is correct
                     opacity: 0.3, // Adjust the opacity for the image to 70%
                 }}
             ></div>

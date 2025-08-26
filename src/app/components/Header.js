@@ -110,7 +110,7 @@ const Header = () => {
           >
             <Link 
             className="cursor-pointer h3 hover:text-accent" 
-            href="/" 
+            href="/home" 
             //activeClass="active"
            >
               Home
@@ -171,7 +171,7 @@ const Header = () => {
 
             <Link 
             className="cursor-pointer h3 hover:text-accent" 
-            href="/#cta" 
+            href="/home/#cta" 
             //activeClass="active"
             >
               Contact

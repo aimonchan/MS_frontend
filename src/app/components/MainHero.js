@@ -64,7 +64,7 @@ const TestTwo = () => {
                         alt="Background Image"
                         layout="fill" // Use layout fill to cover the entire div
                         objectFit="cover" // Cover the div with the image
-                        className="absolute inset-0 object-cover opacity-30" // Set opacity to 30% 
+                        className="absolute inset-0 object-cover opacity-50" // Set opacity to 30% 
                     />
                 </motion.div>
             </AnimatePresence>
@@ -110,8 +110,8 @@ const TestTwo = () => {
                     exit="exit" 
                     className='w-full flex flex-col md:flex md:flex-col lg:flex lg:flex-row justify-center items-center md:space-x-8 lg:space-x-8 mt-5'
                 >
-                    <MainButton onClick={handleClick} className='w-full md:w-[210px] z-10'>Contact Now!</MainButton>
-                    <SecondMainButton onClick={handleClick} className='w-full md:w-[210px] my-4 z-10'>Get Started!</SecondMainButton>
+                    <MainButton className='w-full md:w-[210px] z-10' href="/home/#cta">Contact Now!</MainButton>
+                    <SecondMainButton href="/projects" className='w-full md:w-[210px] my-4 z-10'>View Projects</SecondMainButton>
           
 
                 </motion.div>

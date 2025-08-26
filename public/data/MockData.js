@@ -1,6 +1,6 @@
-import Img1 from "../images/hero_one.webp";
-import Img2 from "../images/hero_two.webp";
-import Img3 from "../images/hero_three.webp";
+import Img1 from "../images/newhero_1.webp";
+import Img2 from "../images/newhero_2.webp";
+import Img3 from "../images/newhero_3.webp";
 
 
 export const HeroData = [

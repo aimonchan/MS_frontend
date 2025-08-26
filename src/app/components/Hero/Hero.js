@@ -26,7 +26,7 @@ const Hero = () => {
                 className="absolute inset-0"
             >
                 <Image
-                    src="/images/hero_one.webp"
+                    src="/images/newhero_1.webp"
                     alt="Background Image"
                     layout="fill"
                     style={{ objectFit: "cover" }} // Use style instead of objectFit
@@ -72,7 +72,7 @@ const Hero = () => {
                     className='flex justify-center items-center space-x-8 mt-5 z-10'
                 >
                     <MainButton onClick={handleClick}>Contact Now!</MainButton>
-                    <SecondMainButton onClick={handleClick}>Get Started!</SecondMainButton>
+                    <SecondMainButton onClick={handleClick}>View Projects</SecondMainButton>
                 </motion.div>
             </div>
         </section>
