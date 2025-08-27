@@ -30,8 +30,8 @@ const AboutUs = () => {
       {/* Text Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 md:px-10 lg:px-16">
         <h1 className="h2 text-center xl:mt-[61px]">About Us</h1>
-        <h3 className="text-sm sm:text-lg md:text-xl mt-4 max-w-[529.48px] mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt magna aliqua.
+        <h3 className="h3 text-sm sm:text-lg md:text-xl mt-4 max-w-[529.48px] mx-auto">
+         Crafting modern spaces with integrity, innovation, <br></br> and a passion for exceptional quality and design.
         </h3>
       </div>
 
@@ -47,15 +47,15 @@ const AboutUs = () => {
         {/* Features Section */}
         <div className="w-full max-w-lg px-4 sm:px-6 md:px-10 lg:px-0 flex flex-col gap-6">
           {[
-            { icon: "/icons/handshake.svg", title: "Trusted", text: "Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices." },
-            { icon: "/icons/reliable.svg", title: "Reliable", text: "Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices." },
-            { icon: "/icons/accurate.svg", title: "Accurate", text: "Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices." }
+            { icon: "/icons/handshake.svg", title: "Trusted", text: "We build lasting client partnerships based on complete honesty, transparency, and professional integrity." },
+            { icon: "/icons/reliable.svg", title: "Reliable", text: "We are committed to delivering every high-quality project consistently on time and within budget." },
+            { icon: "/icons/accurate.svg", title: "Accurate", text: "Our engineering precision ensures every detail is meticulously planned and executed with flawless accuracy." }
           ].map((item, index) => (
             <div key={index} className="flex items-center gap-4">
               <Image src={item.icon} width={50} height={50} alt={item.title} />
               <div>
                 <h4 className="text-lg sm:text-xl font-semibold">{item.title}</h4>
-                <p className="text-sm sm:text-md">{item.text}</p>
+                <p className="text-sm sm:text-md text-white h3">{item.text}</p>
               </div>
             </div>
           ))}

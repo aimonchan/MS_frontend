@@ -99,7 +99,7 @@ const MarqueeSlider = () => {
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
-          pauseOnMouseEnter: false,
+          pauseOnMouseEnter: true,
           stopOnLastSlide: false,
           reverseDirection: true,
         }}

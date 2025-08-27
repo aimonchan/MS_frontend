@@ -24,7 +24,7 @@ export default function Home() {
       
       <TeamMembers />
       <Footer />
-      <BackToTopBtn/>
+      {/* <BackToTopBtn/> */}
     </main>
   );
 }
