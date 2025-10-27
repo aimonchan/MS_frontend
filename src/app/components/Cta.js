@@ -230,13 +230,16 @@ const ContactUs = () => {
               <div className="mt-6 space-y-4">
                 <div className="flex items-center">
                   <i className="fas fa-envelope text-accent mr-3"></i>
-                  <span>contact@mspace-deco.com</span>
+                  <span>marketing.team@mspace-deco.com</span>
                 </div>
                 <div>
                   <i className="fas fa-phone-alt text-accent mr-3"></i>
-                  <div>(+95) 99717 494 83</div>
-                  <div>(+95) 99740 875 22</div>
-                  <div>(+95) 97631 284 61</div>
+                  <div>(+95) 9449 556 610</div>
+                  <div>(+95) 9449 556 620</div>
+                  <div>(+95) 9449 556 630</div>
+                  <div>(+95) 9449 556 640</div>
+                  <div>(+95) 9449 556 650</div>
+                  <div>(+95) 9449 556 680</div>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-map-marker-alt text-accent mr-3"></i>

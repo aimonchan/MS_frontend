@@ -33,7 +33,7 @@ const CEOmessage = () => {
         {/* Left Image */}
         <div 
           className="w-[300px] h-[350px] sm:w-80 md:w-96 lg:w-[400px] lg:h-[528px] sm:h-72 md:h-80  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
-          style={{ backgroundImage: "url(/images/CEO.webp)" }}
+          style={{ backgroundImage: "url(/images/CEO_.png)" }}
         ></div>
 
         {/* Features Section */}

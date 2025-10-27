@@ -33,7 +33,7 @@ const MDmessage = () => {
         {/* Right Image Mobile */}
         <div 
           className="block md:hidden w-[300px] h-[350px] sm:w-80 md:w-96 lg:w-[400px] lg:h-[528px] sm:h-72 md:h-80  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
-          style={{ backgroundImage: "url(/images/MD.webp)" }}
+          style={{ backgroundImage: "url(/images/MD_.jpg)" }}
         ></div>
         
         {/* Features Section */}
@@ -46,7 +46,7 @@ const MDmessage = () => {
         {/* Right Image Mobile */}
         <div 
           className="hidden md:block w-[300px] h-[350px] sm:w-80 md:w-96 lg:w-[400px] lg:h-[528px] sm:h-72 md:h-80  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
-          style={{ backgroundImage: "url(/images/MD.webp)" }}
+          style={{ backgroundImage: "url(/images/MD_.jpg)" }}
         ></div>
 
       </div>

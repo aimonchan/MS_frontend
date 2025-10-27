@@ -19,6 +19,7 @@ import TestTwo from "../components/TestTwo";
 import OurLocation from "../components/GoogleMap";
 import ProductDetail from "../components/DetailProject";
 import TestRooCode from "../components/TestRooCode";
+import MainProjects from "../components/Projects/MainProjects";
 
 export default function Home() {
   return (
@@ -26,16 +27,17 @@ export default function Home() {
       <Header />
       <MainHero/>
       
-      <NewsAndEventsSlider />
+      {/* <NewsAndEventsSlider /> */}
       <About />
       <Brands />
       <OurServices />
-      <Projects />
+      {/* <Projects /> */}
+      <MainProjects />
       {/* <Test/> Do not delete */}
       {/* <ProductDetail/> Do not delete */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       <TeamMembers />
-      <Blogs />
+      {/* <Blogs /> */}
       <Cta />
       <OurLocation />
       {/* <TestRooCode /> */}

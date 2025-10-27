@@ -62,28 +62,27 @@ const MainOurServices = () => {
                   <div className="text-center mb-8">
                     <h1 className="h2 text-center xl:mt-[61px]">Our Services</h1>
                     <p className="text-gray-300 mt-2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et
+                      We provide comprehensive, end-to-end services, ensuring a seamless and hassle-free experience for our clients.
                     </p>
                   </div>
                   
                   <div className="flex flex-col items-center justify-items-center gap-8">
                     
                     <ServicesCard 
-                    caption="Design" 
-                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,."
+                    caption="Design & Build (Turnkey Solution)" 
+                    description="We handle the entire process from design to completion, saving you time and hassle."
                     iconImage="/icons/drawing-box.svg"
                     />
 
                     <ServicesCard
-                    caption="Build" 
-                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,."
+                    caption="Interior Design" 
+                    description="We specialize in creating innovative designs that perfectly align with your unique style and requirements."
                     iconImage="/icons/construction-crane.svg"
                     />
 
                     <ServicesCard 
-                    caption="Innovation" 
-                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,."
+                    caption="Custom Furniture"
+                    description="We build and install high quality, custom-made furniture that perfectly fits your space."
                     iconImage="/icons/Renovate.svg"
                     />
                     

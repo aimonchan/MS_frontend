@@ -1,89 +1,20 @@
-// Your project data
 // export const projectsData = [
-//   { 
-//       id: 1, 
-//       category: 'Offices', 
-//       title: 'ABC Holdings', 
-//       location: 'New York', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about ABC Holdings...' 
-//   },
-//   { 
-//       id: 2, 
-//       category: 'Offices', 
-//       title: 'XYZ Tower', 
-//       location: 'Chicago', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'],
-//       description: 'Detailed info about XYZ Tower...' 
-//   },
-//   { 
-//       id: 3, 
-//       category: 'Offices', 
-//       title: 'Corporate Hub', 
-//       location: 'San Francisco', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'],
-//       description: 'Detailed info about Corporate Hub...' 
-//   },
-//   { 
-//       id: 4, 
-//       category: 'Shopping Malls', 
-//       title: 'Grand Mall', 
-//       location: 'Los Angeles', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about Grand Mall...' 
-//   },
-//   { 
-//       id: 5, 
-//       category: 'Shopping Malls', 
-//       title: 'City Centre', 
-//       location: 'Miami', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about City Centre...' 
-//   },
-//   { 
-//       id: 6, 
-//       category: 'Warehouses', 
-//       title: 'Logistics Central', 
-//       location: 'Houston', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about Logistics Central...' 
-//   },
-//   { 
-//       id: 7, 
-//       category: 'Hotels', 
-//       title: 'Ocean View Hotel', 
-//       location: 'San Diego', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about Ocean View Hotel...' 
-//   },
-//   { 
-//       id: 8, 
-//       category: 'Hotels', 
-//       title: 'Mountain Resort', 
-//       location: 'Denver', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about Mountain Resort...' 
-//   },
-//   { 
-//       id: 9, 
-//       category: 'Offices', 
-//       title: 'Tech Park Offices', 
-//       location: 'Austin', 
-//       images: ['/images/project_one.webp', '/images/project_two.webp', '/images/project_three.webp'], 
-//       description: 'Detailed info about Tech Park Offices...' 
-//   },
+//   { id: 1, category: 'Offices', title: 'Retro Link Co.,Ltd.', location: 'Yangon', image: '/images/retro_1.webp', image2: '/images/retro_2.webp', image3: '/images/retro_3.webp', image4: 'retro_4.webp', image5: 'retro_5.webp', image6: 'retro_6.webp' },
+//   { id: 2, category: 'Offices', title: 'Modern Space Co.,Ltd.', location: 'Yangon', image: '/images/mspace_a.webp', image2: '/images/mspace_b.webp', image3: '/images/mspace_c.webp' },
+//   { id: 3, category: 'Offices', title: 'Tech Hub', location: 'New York', image: '/images/project_three.webp' },
+//   { id: 4, category: 'Condos & Apartments', title: 'South Okkalapa Apartment', location: 'Yangon', image: '/images/SO_1.webp', image2: '/images/SO_2.webp', image3: '/images/SO_3.webp' },
+//   { id: 11, category: 'Condos & Apartments', title: 'Yadanar Hninsi', location: 'Yangon', image: '/images/ydnsi_1.webp', image2: '/images/ydnsi_2.webp', image3: '/images/ydnsi_3.webp' },
+//   { id: 12, category: 'Spas & Beauty Saloons', title: 'Spa@Thanlyin', location: 'Yangon', image: '/images/project_one.webp' },
+//   { id: 13, category: 'Factory', title: 'Modern Manufacturing', location: 'Bago', image: '/images/project_two.webp' },
+//   { id: 14, category: 'Hotel', title: 'The Oasis Hotel', location: 'Ngapali', image: '/images/project_three.webp' },
+//   { id: 15, category: 'Hotel', title: 'City Center Inn', location: 'Yangon', image: '/images/project_one.webp' },
+//   { id: 16, category: 'Offices', title: 'Corporate Towers', location: 'Yangon', image: '/images/project_four.webp' },
 // ];
 
-// // --- ADD THIS FUNCTION ---
 // export const getProjectById = (id) => {
-//   // Convert the incoming id (string from URL param) to a number for comparison
-//   // Adjust this if your project IDs are actually strings
-//   const numericId = Number(id);
-//   if (isNaN(numericId)) {
-//       return undefined; // Handle non-numeric IDs if necessary
-//   }
-//   return projectsData.find(project => project.id === numericId);
-// };
+//     const numericId = Number(id);
+//     return projectsData.find(project => project.id === numericId);
+// }
 
 export const projectsData = [
   { 
@@ -100,11 +31,11 @@ export const projectsData = [
       '/images/retro_6.webp'
     ],
     details: [
-        { label: 'Client', value: 'Retro Link Office' },
+        { label: 'Client', value: 'Retro Link Co.,Ltd.' },
         { label: 'Client Industry', value: 'Technology & Communications' },
         { label: 'Site Area', value: '1,000 Sqft' },
         { label: 'Project Type', value: 'Design & Build' },
-        { label: 'Services', value: 'Layout Plans, 3D Designs and Furniture Detailed Drawings' },
+        { label: 'Services', value: 'Layout Plans, 3D Designs, Furniture Detailed Drawings' },
         { label: 'Project Duration', value: '5 months' },
         { label: 'Location', value: 'Yangon' },
         { label: 'Completion Date', value: '15 March 2023' },
@@ -123,8 +54,8 @@ export const projectsData = [
     details: [
         { label: 'Client', value: 'Modern Space Co.,Ltd.' },
         { label: 'Client Industry', value: 'Co-working Spaces' },
-        { label: 'Site Area', value: '1,200 Sqft' },
-        { label: 'Project Type', value: 'Design & Build' },
+        { label: 'Site Area', value: '2000 SQM' },
+        { label: 'Project Type', value: 'Commercial Fit-Out' },
         { label: 'Services', value: 'Design & Build' },
         { label: 'Project Duration', value: '4 months' },
         { label: 'Location', value: 'Yangon' },
@@ -133,6 +64,25 @@ export const projectsData = [
   },
   { 
     id: 3, 
+    category: 'Offices', 
+    title: 'Tech Hub', 
+    description: "An innovative workspace designed for a leading technology firm, featuring state-of-the-art facilities, collaborative zones, and a minimalist design that reflects the company's forward-thinking culture.",
+    images: [
+      '/images/project_three.webp'
+    ],
+    details: [
+        { label: 'Client', value: 'Innovate Solutions Inc.' },
+        { label: 'Client Industry', value: 'Software Development' },
+        { label: 'Site Area', value: '5000 SQM' },
+        { label: 'Project Type', value: 'New Office Construction' },
+        { label: 'Services', value: 'Architectural Design, Construction' },
+        { label: 'Project Duration', value: '8 months' },
+        { label: 'Location', value: 'New York' },
+        { label: 'Completion Date', value: '01 June 2023' },
+    ]
+  },
+  { 
+    id: 4, 
     category: 'Condos & Apartments', 
     title: 'South Okkalapa Apartment', 
     description: 'A complete interior renovation of a residential apartment in South Okkalapa, transforming a classic space into a modern, comfortable, and highly functional home for a young family.',
