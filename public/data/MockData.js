@@ -79,46 +79,60 @@ export const TestimonialData = [
 
 export const TeamData = [
     {
-      name: 'John Cena',
-      position: 'CEO & Manager',
-      imageURL: "../images/member_one.webp",
+      name: 'Mr. Kyaw Wai Moe',
+      position: 'CEO & FOUNDER',
+      imageURL: "../images/CEO_face.png",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        'Mr. Kyaw Wai Moe is a visionary leader, driving Modern Space’s commitment to innovative design and delivering superior project excellence and custom-made furnishing solutions for every client.',
     },
     {
-      name: 'John Carter',
-      position: 'CEO & CO-FOUNDER',
-      imageURL: "../images/member_two.webp",
+      name: 'Ms. Thae Su Hlaing',
+      position: 'MD & CO-FOUNDER',
+      imageURL: "../images/MD_face.jpg",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        'Ms. Thae Su Hlaing is a strategic leader and co-founder, overseeing all design operations and ensuring Modern Space delivers unmatched quality and client-focused interior solutions across every project.',
     },
     {
-      name: 'John Carter',
-      position: 'CEO & CO-FOUNDER',
-      imageURL: "../images/member_three.webp",
+      name: 'Mr. Yan Naung Soe',
+      position: 'DESIGN DIRECTOR',
+      imageURL: "../images/Koyan_face.jpg",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        'Mr. Yan Naung Soe is the creative director, championing innovative architectural design and ensuring technical excellence and artistic integrity are met throughout every Modern Space project.',
     },
     {
-      name: 'John Carter',
-      position: 'CEO & CO-FOUNDER',
+      name: 'Ms. Zin Zin',
+      position: 'MARKETING MANAGER',
       imageURL: "../images/member_four.webp",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        "Ms. Zin Zin drives the company's market presence, developing strategic campaigns that highlight Modern Space's unique value and foster strong relationships with key clients and partners.",
     },
     {
-      name: 'John Carter',
-      position: 'CEO & CO-FOUNDER',
-      imageURL: "../images/member_one.webp",
+      name: 'Ms. Hnin Thandar',
+      position: 'FINANCE MANAGER',
+      imageURL: "../images/Masnow_face.jpg",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        "Ms. Hnin Thandar manages all financial operations, ensuring budgetary stability, strategic resource allocation, and fiscal compliance to support Modern Space's sustained business growth.",
     },
     {
-      name: 'John Carter',
-      position: 'CEO & CO-FOUNDER',
-      imageURL: "../images/member_two.webp",
+      name: 'Ms. Nilar Cho',
+      position: 'QUANTITY SURVEYOR',
+      imageURL: "../images/Manilar_face.jpg",
       description:
-        'Lorem ipsum dolor sit amet consectetur adipiscing elit amet hendrerit pretium nulla sed enim iaculis mi.',
+        "Ms. Nilar Cho provides expert cost management, ensuring accurate project estimates, controlling expenses, and maintaining financial viability across all Modern Space construction and fit-out projects.",
+    },
+    {
+      name: 'Ms. Wint Yadanar Myat Swe',
+      position: 'HR & ADMIN',
+      imageURL: "../images/Majue_face.jpg",
+      description:
+        "Ms. Wint Yadanar Myat Swe oversees human resources and administrative operations, guaranteeing a supportive workplace, efficient internal processes, and organizational compliance for the team.",
+    }, 
+    {
+      name: 'Mr. Myo Ko',
+      position: 'FACTORY MANAGER',
+      imageURL: "../images/Komyo_face.jpg",
+      description:
+        "Mr. Myo Ko directs all factory production, ensuring optimal manufacturing efficiency, strict quality control, and timely delivery of all bespoke Modern Space furnishing products.",
     },
   ];
 

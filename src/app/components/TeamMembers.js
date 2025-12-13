@@ -42,7 +42,7 @@ const TeammemberCard = ({ image, name, position, description }) => {
 const TeamMembers = () => {
   return (
     // Section uses padding for space, not fixed heights.
-    <section className="relative my-4 mx-2 sm:mx-4 rounded-2xl overflow-hidden bg-black border border-gray-800">
+    <section className="relative my-4 mx-2 sm:mx-4 rounded-2xl overflow-hidden bg-black border border-grayborder">
       {/* Background image & Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-10"

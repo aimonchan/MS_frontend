@@ -120,7 +120,6 @@ const MainProjects = () => {
     "Offices",
     "Spas & Beauty Saloons",
     "Factory",
-    "Hotel"
   ];
 
   const filteredProjects = selectedCategory === 'All'
@@ -135,7 +134,7 @@ const MainProjects = () => {
     <section
       id="projects"
       // Using standard Tailwind spacing for better consistency
-      className="relative my-4 mx-2 sm:mx-4 rounded-2xl bg-black border border-gray-800"
+      className="relative my-4 mx-2 sm:mx-4 rounded-2xl overflow-hidden bg-black border border-grayborder"
     >
       {/* Background image & Overlay */}
       <div

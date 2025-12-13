@@ -26,14 +26,14 @@ const OURcompany = () => {
         
         {/* Image */}
         <div 
-          className="w-[363px] h-[155.57px] md:w-[1232px] md:h-[528px]  rounded-2xl bg-cover bg-center mx-auto md:mx-0"
-          style={{ backgroundImage: "url(/images/our-company.webp)" }}
+          className="w-[363px] h-[155.57px] md:w-[1232px] md:h-[528px]  rounded-2xl bg-contain bg-center mx-auto md:mx-0"
+          style={{ backgroundImage: "url(/images/our-company.png)" }}
         ></div>
 
         {/* Features Section */}
         <div className='px-4'>
           <p className='text-justify description text-white md:w-[1233px] md:h-[256px]'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+          Modern Space Furnishing and Decoration Co.,Ltd., established in 2019, is dedicated to creating aesthetically pleasing, functional, and modern spaces. We act as your One-Stop Solution, offering a complete, stress-free experience from start to finish. Our Core Services include Design & Build (Turnkey Solutions), where we manage the entire project lifecycle, and specialized Interior Design to create innovative concepts tailored to your unique style. We also provide Custom Furniture construction and installation, ensuring every piece perfectly fits your space. We proudly serve All Sectors: Residential, Commercial, Hospitality & Institutional, and Industrial. Our commitment to Quality & Punctuality is unwavering; our expert team uses only high-quality materials to ensure superior standards and timely project completion. Furthermore, we provide reliable Post-Handover Support, cementing our dedication to a long-term partnership long after installation is complete.
           </p>
         </div>
       </div>

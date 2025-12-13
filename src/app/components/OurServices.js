@@ -79,6 +79,7 @@
 
 import MainButton from './MainButton';
 import ServicesCard from './Cards/ServicesCard';
+import Link from 'next/link';
 
 const ServicesSection = () => {
     const handleClick = () => {
@@ -87,7 +88,7 @@ const ServicesSection = () => {
 
     return (
         <section
-            className="relative my-4 mx-2 sm:mx-4 rounded-2xl overflow-hidden bg-black border border-gray-800"
+            className="border border-grayborder relative my-4 mx-2 sm:mx-4 rounded-2xl overflow-hidden bg-black"
         >
             {/* Background & Overlay */}
             <div
@@ -123,7 +124,7 @@ const ServicesSection = () => {
                         iconImage="/icons/construction-crane.svg"
                     />
                     <ServicesCard
-                        caption="Custom Furniture"
+                        caption="Custom-made Furniture"
                         description="We build and install high quality, custom-made furniture that perfectly fits your space."
                         iconImage="/icons/Renovate.svg"
                     />
@@ -131,7 +132,9 @@ const ServicesSection = () => {
 
                 {/* Centered Button Wrapper */}
                 <div className="mt-16 flex justify-center">
-                    <MainButton onClick={handleClick}>Show More!</MainButton>
+                    <Link href="/our-services">
+                        <MainButton>Show More!</MainButton>
+                    </Link>
                 </div>
             </div>
         </section>

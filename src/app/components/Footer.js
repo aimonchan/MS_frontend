@@ -10,49 +10,49 @@ const Footer = () => {
           
           {/* Product Links */}
           <div>
-            <h3 className="text-orange-500 font-bold mb-4">PRODUCT</h3>
+            <h3 className="text-orange-500 font-bold mb-4">HOME</h3>
             <ul>
-              <li className="mb-2"><a href="#">Features</a></li>
-              <li className="mb-2"><a href="#">Pricing</a></li>
-              <li className="mb-2"><a href="#">Case studies</a></li>
-              <li className="mb-2"><a href="#">Reviews</a></li>
-              <li className="mb-2"><a href="#">Updates</a></li>
+              <li className="mb-2"><a href="#">About Us</a></li>
+              <li className="mb-2"><a href="#">Our Services</a></li>
+              <li className="mb-2"><a href="#">Our Projects</a></li>
+              <li className="mb-2"><a href="#">Team Members</a></li>
+              <li className="mb-2"><a href="#">Location</a></li>
             </ul>
           </div>
           
           {/* Company Links */}
           <div>
-            <h3 className="text-orange-500 font-bold mb-4">COMPANY</h3>
+            <h3 className="text-orange-500 font-bold mb-4">ABOUT US</h3>
             <ul>
-              <li className="mb-2"><a href="#">About</a></li>
-              <li className="mb-2"><a href="#">Contact us</a></li>
-              <li className="mb-2"><a href="#">Careers</a></li>
-              <li className="mb-2"><a href="#">Culture</a></li>
-              <li className="mb-2"><a href="#">Blog</a></li>
+              <li className="mb-2"><a href="#">CEO's Insight</a></li>
+              <li className="mb-2"><a href="#">MD's Message</a></li>
+              <li className="mb-2"><a href="#">Our Company</a></li>
+              <li className="mb-2"><a href="#">Our History</a></li>
+              <li className="mb-2"><a href="#">Team Members</a></li>
             </ul>
           </div>
           
           {/* Support Links */}
           <div>
-            <h3 className="text-orange-500 font-bold mb-4">SUPPORT</h3>
+            <h3 className="text-orange-500 font-bold mb-4">OUR SERVICES</h3>
             <ul>
-              <li className="mb-2"><a href="#">Getting started</a></li>
-              <li className="mb-2"><a href="#">Help center</a></li>
-              <li className="mb-2"><a href="#">Server status</a></li>
-              <li className="mb-2"><a href="#">Report a bug</a></li>
-              <li className="mb-2"><a href="#">Chat support</a></li>
+              <li className="mb-2"><a href="#">Design & Build</a></li>
+              <li className="mb-2"><a href="#">Interior Design</a></li>
+              <li className="mb-2"><a href="#">Custom-made Furniture</a></li>
+              <li className="mb-2"><a href="#">Contact</a></li>
+              {/* <li className="mb-2"><a href="#">Chat support</a></li> */}
             </ul>
           </div>
           
           {/* Downloads Links */}
           <div>
-            <h3 className="text-orange-500 font-bold mb-4">DOWNLOADS</h3>
+            <h3 className="text-orange-500 font-bold mb-4">PROJECTS</h3>
             <ul>
-              <li className="mb-2"><a href="#">iOS</a></li>
-              <li className="mb-2"><a href="#">Android</a></li>
-              <li className="mb-2"><a href="#">Mac</a></li>
-              <li className="mb-2"><a href="#">Windows</a></li>
-              <li className="mb-2"><a href="#">Chrome</a></li>
+              <li className="mb-2"><a href="#">Condos & Apartments</a></li>
+              <li className="mb-2"><a href="#">Offices</a></li>
+              <li className="mb-2"><a href="#">Spas & Beauty Saloons</a></li>
+              <li className="mb-2"><a href="#">Factories</a></li>
+              {/* <li className="mb-2"><a href="#">Chrome</a></li> */}
             </ul>
           </div>
         </div>
