@@ -102,7 +102,7 @@ export const TeamData = [
     {
       name: 'Ms. Zin Zin',
       position: 'MARKETING MANAGER',
-      imageURL: "../images/member_four.webp",
+      imageURL: "../images/zinzin_face.png",
       description:
         "Ms. Zin Zin drives the company's market presence, developing strategic campaigns that highlight Modern Space's unique value and foster strong relationships with key clients and partners.",
     },
@@ -126,13 +126,6 @@ export const TeamData = [
       imageURL: "../images/Majue_face.jpg",
       description:
         "Ms. Wint Yadanar Myat Swe oversees human resources and administrative operations, guaranteeing a supportive workplace, efficient internal processes, and organizational compliance for the team.",
-    }, 
-    {
-      name: 'Mr. Myo Ko',
-      position: 'FACTORY MANAGER',
-      imageURL: "../images/Komyo_face.jpg",
-      description:
-        "Mr. Myo Ko directs all factory production, ensuring optimal manufacturing efficiency, strict quality control, and timely delivery of all bespoke Modern Space furnishing products.",
     },
   ];
 
