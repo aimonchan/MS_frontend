@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -12,11 +13,11 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold mb-4">HOME</h3>
             <ul>
-              <li className="mb-2"><a href="#">About Us</a></li>
-              <li className="mb-2"><a href="#">Our Services</a></li>
-              <li className="mb-2"><a href="#">Our Projects</a></li>
-              <li className="mb-2"><a href="#">Team Members</a></li>
-              <li className="mb-2"><a href="#">Location</a></li>
+              <li className="mb-2"><Link href="/about-us" className="text-gray-300 hover:text-white">About Us</Link></li>
+              <li className="mb-2"><Link href="/our-services" className="text-gray-300 hover:text-white">Our Services</Link></li>
+              <li className="mb-2"><Link href="/projects" className="text-gray-300 hover:text-white">Our Projects</Link></li>
+              <li className="mb-2"><Link href="/about-us#team" className="text-gray-300 hover:text-white">Team Members</Link></li>
+              <li className="mb-2"><Link href="/location" className="text-gray-300 hover:text-white">Location</Link></li>
             </ul>
           </div>
           
@@ -24,11 +25,11 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold mb-4">ABOUT US</h3>
             <ul>
-              <li className="mb-2"><a href="#">CEO's Insight</a></li>
-              <li className="mb-2"><a href="#">MD's Message</a></li>
-              <li className="mb-2"><a href="#">Our Company</a></li>
-              <li className="mb-2"><a href="#">Our History</a></li>
-              <li className="mb-2"><a href="#">Team Members</a></li>
+              <li className="mb-2"><Link href="/about-us#ceo" className="text-gray-300 hover:text-white">CEO's Insight</Link></li>
+              <li className="mb-2"><Link href="/about-us#md" className="text-gray-300 hover:text-white">MD's Message</Link></li>
+              <li className="mb-2"><Link href="/about-us#company" className="text-gray-300 hover:text-white">Our Company</Link></li>
+              <li className="mb-2"><Link href="/about-us#history" className="text-gray-300 hover:text-white">Our History</Link></li>
+              <li className="mb-2"><Link href="/about-us#team" className="text-gray-300 hover:text-white">Team Members</Link></li>
             </ul>
           </div>
           
@@ -36,10 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold mb-4">OUR SERVICES</h3>
             <ul>
-              <li className="mb-2"><a href="#">Design & Build</a></li>
-              <li className="mb-2"><a href="#">Interior Design</a></li>
-              <li className="mb-2"><a href="#">Custom-made Furniture</a></li>
-              <li className="mb-2"><a href="#">Contact</a></li>
+              <li className="mb-2"><Link href="/our-services#design-build" className="text-gray-300 hover:text-white">Design & Build</Link></li>
+              <li className="mb-2"><Link href="/our-services#interior-design" className="text-gray-300 hover:text-white">Interior Design</Link></li>
+              <li className="mb-2"><Link href="/our-services#custom-furniture" className="text-gray-300 hover:text-white">Custom-made Furniture</Link></li>
+              <li className="mb-2"><Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
               {/* <li className="mb-2"><a href="#">Chat support</a></li> */}
             </ul>
           </div>
@@ -48,10 +49,10 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold mb-4">PROJECTS</h3>
             <ul>
-              <li className="mb-2"><a href="#">Condos & Apartments</a></li>
-              <li className="mb-2"><a href="#">Offices</a></li>
-              <li className="mb-2"><a href="#">Spas & Beauty Saloons</a></li>
-              <li className="mb-2"><a href="#">Factories</a></li>
+              <li className="mb-2"><Link href="/projects#condos" className="text-gray-300 hover:text-white">Condos & Apartments</Link></li>
+              <li className="mb-2"><Link href="/projects#offices" className="text-gray-300 hover:text-white">Offices</Link></li>
+              <li className="mb-2"><Link href="/projects#spas" className="text-gray-300 hover:text-white">Spas & Beauty Saloons</Link></li>
+              <li className="mb-2"><Link href="/projects#factories" className="text-gray-300 hover:text-white">Factories</Link></li>
               {/* <li className="mb-2"><a href="#">Chrome</a></li> */}
             </ul>
           </div>
@@ -80,8 +81,8 @@ const Footer = () => {
         <div className="text-center mt-8 text-gray-500">
           <p>
             All Rights Reserved |{' '}
-            <a href="#" className="text-gray-300 hover:text-white">Terms and Conditions</a> |{' '}
-            <a href="#" className="text-gray-300 hover:text-white">Privacy Policy</a>
+            <Link href="/terms" className="text-gray-300 hover:text-white">Terms and Conditions</Link> |{' '}
+            <Link href="/privacy" className="text-gray-300 hover:text-white">Privacy Policy</Link>
           </p>
           <p>Copyright © 2025 by Modern Space Furnishing & Decoration Co.,Ltd (Myanmar)</p>
         </div>
