@@ -16,8 +16,8 @@ const Footer = () => {
               <li className="mb-2"><Link href="/about-us" className="text-gray-300 hover:text-white">About Us</Link></li>
               <li className="mb-2"><Link href="/our-services" className="text-gray-300 hover:text-white">Our Services</Link></li>
               <li className="mb-2"><Link href="/projects" className="text-gray-300 hover:text-white">Our Projects</Link></li>
-              <li className="mb-2"><Link href="/about-us#team" className="text-gray-300 hover:text-white">Team Members</Link></li>
-              <li className="mb-2"><Link href="/location" className="text-gray-300 hover:text-white">Location</Link></li>
+              <li className="mb-2"><Link href="/about-us/#team" className="text-gray-300 hover:text-white">Team Members</Link></li>
+              <li className="mb-2"><Link href="/home/#location" className="text-gray-300 hover:text-white">Location</Link></li>
             </ul>
           </div>
           
@@ -26,9 +26,9 @@ const Footer = () => {
             <h3 className="text-orange-500 font-bold mb-4">ABOUT US</h3>
             <ul>
               <li className="mb-2"><Link href="/about-us#ceo" className="text-gray-300 hover:text-white">CEO's Insight</Link></li>
-              <li className="mb-2"><Link href="/about-us#md" className="text-gray-300 hover:text-white">MD's Message</Link></li>
-              <li className="mb-2"><Link href="/about-us#company" className="text-gray-300 hover:text-white">Our Company</Link></li>
-              <li className="mb-2"><Link href="/about-us#history" className="text-gray-300 hover:text-white">Our History</Link></li>
+              <li className="mb-2"><Link href="/about-us/#md" className="text-gray-300 hover:text-white">MD's Message</Link></li>
+              <li className="mb-2"><Link href="/about-us/#company" className="text-gray-300 hover:text-white">Our Company</Link></li>
+              <li className="mb-2"><Link href="/about-us/#history" className="text-gray-300 hover:text-white">Our History</Link></li>
               <li className="mb-2"><Link href="/about-us#team" className="text-gray-300 hover:text-white">Team Members</Link></li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               <li className="mb-2"><Link href="/our-services#design-build" className="text-gray-300 hover:text-white">Design & Build</Link></li>
               <li className="mb-2"><Link href="/our-services#interior-design" className="text-gray-300 hover:text-white">Interior Design</Link></li>
               <li className="mb-2"><Link href="/our-services#custom-furniture" className="text-gray-300 hover:text-white">Custom-made Furniture</Link></li>
-              <li className="mb-2"><Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link></li>
+              <li className="mb-2"><Link href="home/#cta" className="text-gray-300 hover:text-white">Contact</Link></li>
               {/* <li className="mb-2"><a href="#">Chat support</a></li> */}
             </ul>
           </div>
@@ -81,8 +81,8 @@ const Footer = () => {
         <div className="text-center mt-8 text-gray-500">
           <p>
             All Rights Reserved |{' '}
-            <Link href="/terms" className="text-gray-300 hover:text-white">Terms and Conditions</Link> |{' '}
-            <Link href="/privacy" className="text-gray-300 hover:text-white">Privacy Policy</Link>
+            <Link href="#" className="text-gray-300 hover:text-white">Terms and Conditions</Link> |{' '}
+            <Link href="#" className="text-gray-300 hover:text-white">Privacy Policy</Link>
           </p>
           <p>Copyright © 2025 by Modern Space Furnishing & Decoration Co.,Ltd (Myanmar)</p>
         </div>

@@ -116,14 +116,14 @@ export const TeamData = [
     {
       name: 'Ms. Nilar Cho',
       position: 'QUANTITY SURVEYOR',
-      imageURL: "../images/Manilar_face.jpg",
+      imageURL: "../images/Manilar_face.png",
       description:
         "Ms. Nilar Cho provides expert cost management, ensuring accurate project estimates, controlling expenses, and maintaining financial viability across all Modern Space construction and fit-out projects.",
     },
     {
       name: 'Ms. Wint Yadanar Myat Swe',
       position: 'HR & ADMIN',
-      imageURL: "../images/Majue_face.jpg",
+      imageURL: "../images/Majue_face.png",
       description:
         "Ms. Wint Yadanar Myat Swe oversees human resources and administrative operations, guaranteeing a supportive workplace, efficient internal processes, and organizational compliance for the team.",
     },

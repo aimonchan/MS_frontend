@@ -9,7 +9,7 @@ const MDmessage = () => {
   };
 
   return (
-    <section className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden md:h-auto xl:h-[877px] lg:h-[807px] flex flex-col items-center text-white h-[1185px]">
+    <section id='md' className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden md:h-auto xl:h-[877px] lg:h-[807px] flex flex-col items-center text-white h-[1185px]">
       
       {/* Background Image */}
       <div 

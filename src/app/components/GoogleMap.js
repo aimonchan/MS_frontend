@@ -15,7 +15,7 @@ const Hero = () => {
   };
 
   return (
-    <section
+    <section id='location'
       className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[1000px] h-[1000px] xl:flex xl:flex-col items-center justify-center overflow-hidden flex flex-col md:flex-row"
       style={{ background: 'linear-gradient(35deg, #171717, #1E2226, #000000)' }}
     >

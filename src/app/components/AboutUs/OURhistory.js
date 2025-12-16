@@ -3,7 +3,7 @@
 const OURhistory = () => {
 
   return (
-    <section className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden xl:h-[650px] flex flex-col items-center text-white h-[976px]">
+    <section id="history" className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden xl:h-[650px] flex flex-col items-center text-white h-[976px]">
       
       {/* Background Image */}
       <div 
