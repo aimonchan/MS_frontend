@@ -16,8 +16,8 @@ import {
   FaRegCalendarAlt,
 } from 'react-icons/fa';
 
-export default function ProjectDetailPage({ params }) {
-  const { projectId } = params;
+export default async function ProjectDetailPage({ params }) {
+  const { projectId } = await params;
   const project = getProjectById(projectId);
 
   if (!project) {
