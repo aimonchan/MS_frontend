@@ -1,9 +1,9 @@
-"use client";
-import React, { useState } from 'react';
+import React from 'react';
 import { notFound } from 'next/navigation';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import Cta from '@/app/components/Cta';
+import ProjectGallery from '@/app/components/Projects/ProjectGallery';
 
 import { getProjectById } from '@/lib/MockData.js'; 
 
@@ -25,7 +25,6 @@ export default function ProjectDetailPage({ params }) {
   }
 
   const projectImages = project.images;
-  const [selectedImage, setSelectedImage] = useState(projectImages[0]);
 
   const iconMap = {
     'Client': FaRegSmile,
@@ -60,32 +59,8 @@ export default function ProjectDetailPage({ params }) {
 
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             
-            {/* Image Gallery */}
-            <div className="flex-1 flex flex-col items-center">
-              {/* Main Image */}
-              <div className="w-full max-w-lg mx-auto mb-4">
-                <img
-                  src={selectedImage}
-                  alt="Selected Product"
-                  className="rounded-xl shadow-lg w-full h-auto object-cover aspect-[4/5]"
-                />
-              </div>
-
-              {/* Thumbnails */}
-              <div className="flex justify-center gap-2 sm:gap-4 overflow-x-auto w-full max-w-lg">
-                {projectImages.slice(0, 3).map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`View ${index + 1}`}
-                    className={`w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-lg border-2 cursor-pointer transition-transform duration-200 transform hover:scale-105 ${
-                      selectedImage === img ? 'border-blue-500' : 'border-gray-400'
-                    }`}
-                    onClick={() => setSelectedImage(img)}
-                  />
-                ))}
-              </div>
-            </div>
+            {/* Image Gallery (client) */}
+            <ProjectGallery images={projectImages} />
 
             {/* Project Description */}
             <div className="flex-1 flex flex-col justify-start">
