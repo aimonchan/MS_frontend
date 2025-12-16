@@ -119,7 +119,7 @@ const MainProjects = () => {
     "Condos & Apartments",
     "Offices",
     "Spas & Beauty Saloons",
-    "Factory",
+    "Factories",
     "Hotel"
   ];
 

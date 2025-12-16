@@ -95,7 +95,7 @@ export const TeamData = [
     {
       name: 'Mr. Yan Naung Soe',
       position: 'DESIGN DIRECTOR',
-      imageURL: "../images/Koyan_face.jpg",
+      imageURL: "../images/Koyan_face.png",
       description:
         'Mr. Yan Naung Soe is the creative director, championing innovative architectural design and ensuring technical excellence and artistic integrity are met throughout every Modern Space project.',
     },

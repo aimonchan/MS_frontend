@@ -14,7 +14,7 @@ export default function ServicesCard({ iconImage, caption, description }) {
                 />
             </div>
         </div>
-        <h2 className="font-primary font-medium text-[24px] text-center">{caption || "Service Card"}</h2>
+        <h2 className="font-primary font-medium text-[24px] text-center text-white">{caption || "Service Card"}</h2>
         <p className="text-justify font-secondary text-[14px] text-white">
             {description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
         </p>
