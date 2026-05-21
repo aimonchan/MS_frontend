@@ -86,13 +86,13 @@ const VacancySection = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const vacancyImages = [
-        "/images/vacancy-1.jpg",
-        "/images/vacancy-2.jpg",
-        "/images/vacancy-3.jpg",
-        "/images/vacancy-4.jpg",
-        "/images/vacancy-5.jpg",
-        "/images/vacancy-6.jpg",
-        "/images/vacancy-7.jpg",
+        "/images/vacancy-1.webp",
+        "/images/vacancy-2.webp",
+        "/images/vacancy-3.webp",
+        "/images/vacancy-4.webp",
+        "/images/vacancy-5.webp",
+        "/images/vacancy-6.webp",
+        "/images/vacancy-7.webp",
     ];
 
     // Modal ပိတ်ရန် Function
