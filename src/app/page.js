@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import NewsAndEventsSlider from "./components/NewsAndEventsSlider";
 import Brands from "./components/Brands";
+import VacancySection from "./components/VacancySection/VacancySection";
 import OurServices from "./components/OurServices";
 import Projects from "./components/Projects";
 import Testimonial from "./components/Testimonial";
@@ -33,6 +34,7 @@ export default function Home() {
       <About />
       <Brands />
       <OurServices />
+      <VacancySection />
       {/* <Projects /> */}
       <MainProjects />
       {/* <Test/> Do not delete */}
