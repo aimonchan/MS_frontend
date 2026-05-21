@@ -86,13 +86,13 @@ const VacancySection = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const vacancyImages = [
-        "/images/vacancy-1.webp",
-        "/images/vacancy-2.webp",
-        "/images/vacancy-3.webp",
-        "/images/vacancy-4.webp",
-        "/images/vacancy-5.webp",
-        "/images/vacancy-6.webp",
-        "/images/vacancy-7.webp",
+        "/images/Vacancy-1.webp",
+        "/images/Vacancy-2.webp",
+        "/images/Vacancy-3.webp",
+        "/images/Vacancy-4.webp",
+        "/images/Vacancy-5.webp",
+        "/images/Vacancy-6.webp",
+        "/images/Vacancy-7.webp",
     ];
 
     // Modal ပိတ်ရန် Function
@@ -101,6 +101,7 @@ const VacancySection = () => {
     return (
         <>
             <section
+                id='vac'
                 className="border border-grayborder mt-4 mx-2 sm:mx-4 relative top-0 left-0 right-0 h-auto rounded-[20px] flex flex-col items-center justify-center overflow-hidden bg-black"
             >
                 {/* Background image & Overlay */}
