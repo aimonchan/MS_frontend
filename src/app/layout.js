@@ -14,7 +14,13 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Modern Space",
   description: "Furnishing & Decoration",
+  verification: {
+    // Google Search Console က ပေးတဲ့ content="..." ထဲက စာသားအရှည်ကြီးကို ဒီနေရာမှာ အစားထိုးထည့်ပါ
+    google: "z-7I0O5xihQoxPUgGJrWh5POrsPIFKS67YYzwPZW_NY", 
+  },
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
