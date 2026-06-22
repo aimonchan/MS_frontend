@@ -185,7 +185,7 @@ const AboutUs = () => {
         {/* --- HEADER TEXT --- */}
         {/* - Using standard Tailwind text sizes for responsive typography.
             Note: semantically, an `<h1>` shouldn't have a class of `h2`. It's better to style directly. */}
-        <h1 className="text-4xl font-bold md:text-5xl">About Us</h1>
+        <h1 className="text-4xl font-bold md:text-5xl">About Modern Space - Interior Decoration & Furnishing</h1>
         {/* - Removed <br> tag for natural, responsive text wrapping.
             - Replaced arbitrary max-width with a standard Tailwind class (max-w-2xl). */}
         <p className="mt-4 text-base text-gray-300 sm:text-lg max-w-2xl">
@@ -215,7 +215,7 @@ const AboutUs = () => {
                   src={item.icon} 
                   width={48} 
                   height={48} 
-                  alt={`${item.title} icon`} 
+                  alt={`Modern Space Furnishing & Decoration - ${item.title}`} 
                   className="mt-1 flex-shrink-0"
                 />
                 <div>
