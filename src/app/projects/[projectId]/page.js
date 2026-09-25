@@ -40,7 +40,7 @@ export default async function ProjectDetailPage({ params }) {
   return (
     <div>
       <Header />
-      <section className="border-t border-gray-200 mt-4 md:mt-5 mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 rounded-lg overflow-hidden bg-black text-white">
+      <section className="relative border-t border-gray-200 mt-4 md:mt-5 mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 rounded-lg overflow-hidden bg-black text-white">
         
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }) {
             {/* Project Description */}
             <div className="flex-1 flex flex-col justify-start">
               {project.description && (
-                <p className="text-sm sm:text-base leading-relaxed text-gray-300 text-justify">
+                <p className="text-sm sm:text-base leading-relaxed text-gray-300 text-left sm:text-justify">
                   {project.description}
                 </p>
               )}
@@ -87,10 +87,10 @@ export default async function ProjectDetailPage({ params }) {
                       <IconComponent className="text-xl sm:text-2xl text-gray-300" />
                     </div>
                     <div className="flex flex-col min-w-0">
-                      <span className="text-xs sm:text-sm text-gray-400 mb-1 truncate">
+                      <span className="text-xs sm:text-sm text-gray-400 mb-1 break-words">
                         {item.label}
                       </span>
-                      <span className="text-sm sm:text-base font-medium text-white truncate">
+                      <span className="text-sm sm:text-base font-medium text-white break-words">
                         {item.value}
                       </span>
                     </div>

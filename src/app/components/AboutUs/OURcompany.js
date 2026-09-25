@@ -3,7 +3,7 @@
 const OURcompany = () => {
 
   return (
-    <section id="company" className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden md:h-auto xl:h-[1111px] lg:h-[807px] flex flex-col items-center text-white h-[976px]">
+    <section id="company" className="px-2 md:px-0 pb-16 border border-grayborder mt-[10px] mx-[5px] md:mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden flex flex-col items-center text-white">
       
       {/* Background Image */}
       <div 
@@ -22,17 +22,17 @@ const OURcompany = () => {
       </div>
 
       {/* Content Layout */}
-      <div className="relative z-10 flex flex-col justify-center  items-center mt-3 lg:mt-10 gap-6 lg:gap-10">
-        
+      <div className="relative z-10 flex flex-col justify-center items-center w-full max-w-[1265px] px-4 mt-3 lg:mt-10 gap-6 lg:gap-10">
+
         {/* Image */}
-        <div 
-          className="w-[363px] h-[155.57px] md:w-[1232px] md:h-[528px]  rounded-2xl bg-contain bg-center mx-auto md:mx-0"
+        <div
+          className="w-full max-w-[1232px] aspect-[1232/528] rounded-2xl bg-contain bg-no-repeat bg-center"
           style={{ backgroundImage: "url(/images/our-company.png)" }}
         ></div>
 
         {/* Features Section */}
-        <div className='px-4'>
-          <p className='text-justify description text-white md:w-[1233px] md:h-[256px]'>
+        <div className='w-full'>
+          <p className='text-justify description text-white'>
           Modern Space Furnishing and Decoration Co.,Ltd., established in 2019, is dedicated to creating aesthetically pleasing, functional, and modern spaces. We act as your One-Stop Solution, offering a complete, stress-free experience from start to finish. Our Core Services include Design & Build (Turnkey Solutions), where we manage the entire project lifecycle, and specialized Interior Design to create innovative concepts tailored to your unique style. We also provide Custom Furniture construction and installation, ensuring every piece perfectly fits your space. We proudly serve All Sectors: Residential, Commercial, Hospitality & Institutional, and Industrial. Our commitment to Quality & Punctuality is unwavering; our expert team uses only high-quality materials to ensure superior standards and timely project completion. Furthermore, we provide reliable Post-Handover Support, cementing our dedication to a long-term partnership long after installation is complete.
           </p>
         </div>

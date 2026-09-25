@@ -87,7 +87,7 @@ const MarqueeSlider = () => {
 return (
     
   <div className="mt-[20px] w-full py-4 bg-[#171717] h-[191px]" role="region" aria-label="Product carousel">
-      <div className="xl:ml-[174px] font-primary uppercase text-white mb-[20px]">Trusted By</div>
+      <div className="px-4 sm:px-6 xl:px-0 xl:ml-[174px] font-primary uppercase text-white mb-[20px]">Trusted By</div>
       <Swiper
         modules={[Autoplay]}
         spaceBetween={5}

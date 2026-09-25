@@ -36,7 +36,7 @@ const ServicesCard = ({ iconImage, caption, description }) => {
 
             {/* Right Block: Description. Takes up the remaining space (3/4 of width on desktop). */}
             <div className='flex flex-col justify-center w-full md:w-3/4'>
-                <p className="font-secondary text-[14px] text-white my-auto text-justify">
+                <p className="font-secondary text-[14px] text-white my-auto text-left md:text-justify">
                     {description || "Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                 </p>
             </div>

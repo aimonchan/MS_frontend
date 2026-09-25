@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function ServicesCard({ iconImage, caption, description }) {
   return (
-    <div className="bg-white/1 backdrop-blur-lg p-6 rounded-[20px] border border-[#f8951e] w-[344px] h-[357px]">
+    <div className="bg-white/1 backdrop-blur-lg p-6 rounded-[20px] border border-[#f8951e] w-full max-w-[344px] h-full">
         <div className="flex justify-center mb-4">
             <div className="bg-black/20 backdrop-blur-lg p-4 w-[106px] h-[106px] rounded-[20px]">
                 <Image 
