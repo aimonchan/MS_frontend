@@ -1,13 +1,11 @@
-'use client';
-
 import Header from '@/app/components/Header';
 import Cta from '@/app/components/Cta';
 import Footer from '@/app/components/Footer';
 import { getNewsById } from '@/lib/NewsData.js';
 import { notFound } from 'next/navigation'; // Import for 404 handling in Next.js
 
-export default function newsDetailPage({ params }) {
-  const { newsId } = params;
+export default async function NewsDetailPage({ params }) {
+  const { newsId } = await params;
   const news = getNewsById(newsId);
 
   // If news not found, trigger Next.js 404

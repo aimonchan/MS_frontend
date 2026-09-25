@@ -188,7 +188,7 @@
 // }
 
 "use client";
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import { notFound } from 'next/navigation';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
@@ -206,7 +206,7 @@ import {
 import CustomProductCard from '@/app/components/Cards/CustomProductCard';
 
 export default function ProjectDetailPage({ params }) {
-  const { chairId } = params;
+  const { chairId } = use(params);
   const chair = getChairById(chairId);
   const [selectedImage, setSelectedImage] = useState(chair?.images[0] || '/default-image.jpg');
   const [visibleProjects] = useState(4); // Set to 4 and no setter needed

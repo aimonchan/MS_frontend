@@ -1,13 +1,11 @@
-'use client';
-
 import Header from '@/app/components/Header';
 import Cta from '@/app/components/Cta';
 import Footer from '@/app/components/Footer';
 import { getBlogById } from '@/lib/BlogData.js';
 import { notFound } from 'next/navigation'; // Import for 404 handling in Next.js
 
-export default function BlogDetailPage({ params }) {
-  const { blogId } = params;
+export default async function BlogDetailPage({ params }) {
+  const { blogId } = await params;
   const blog = getBlogById(blogId);
 
   // If blog not found, trigger Next.js 404
