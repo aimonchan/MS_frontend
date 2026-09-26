@@ -9,7 +9,7 @@ const MDmessage = () => {
   };
 
   return (
-    <section id='md' className="px-2 md:px-0 md:py-0 border border-grayborder mt-[10px] mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden md:h-auto xl:h-[877px] lg:h-[807px] flex flex-col items-center text-white h-[1185px]">
+    <section id='md' className="px-2 md:px-0 pb-16 border border-grayborder mt-[10px] mx-[5px] md:mx-[17.5px] mb-4 relative rounded-[20px] bg-black overflow-hidden flex flex-col items-center text-white">
       
       {/* Background Image */}
       <div 
@@ -23,7 +23,7 @@ const MDmessage = () => {
 
 
       {/* Text Content */}
-      <div className="mt-[140px] relative z-10 text-center px-4 sm:px-6 md:px-10 lg:px-16">
+      <div className="mt-16 relative z-10 text-center px-4 sm:px-6 md:px-10 lg:px-16">
         <h1 className="h2 text-center xl:mt-[61px]">Message from Our Managing Director</h1>
       </div>
 

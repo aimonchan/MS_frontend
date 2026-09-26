@@ -37,7 +37,7 @@
     font-size: var(--font-secondary-size);
   }
   .h1{
-    @apply font-primary font-medium text-[50px] md:text-[64px] drop-shadow-lg leading-tight;
+    @apply font-primary font-medium text-[40px] sm:text-[50px] md:text-[64px] drop-shadow-lg leading-tight;
     text-shadow: 
       1px 1px 0 rgba(0, 0, 0, 1), /* Bottom-right */
      -1px -1px 0 rgba(0, 0, 0, 1), /* Top-left */

@@ -38,7 +38,7 @@ const MainCustomCreations = () => {
     return (
         <section
             id="projects" // Add an ID if you want to link back to this section
-            className="border border-grayborder mt-[10px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] md:h-[1400px] sm:h-[85px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black py-4"
+            className="border border-grayborder mt-[5px] md:mt-[10px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:flex xl:flex-col items-center justify-center overflow-hidden bg-black pt-4 pb-12"
         >
             {/* Background image */}
             <div
@@ -55,7 +55,7 @@ const MainCustomCreations = () => {
            
 
       {/* Content Layout */}
-      <div className="relative z-10 flex flex-col lg:flex-row lg:justify-center lg:items-center mt-[75px] lg:mt-10 gap-6 lg:gap-10">
+      <div className="relative z-10 flex flex-col lg:flex-row lg:justify-center lg:items-center mt-[75px] md:mt-[100px] lg:mt-[130px] gap-6 lg:gap-10">
         <div className="container mx-auto px-4 mt-[25px]">
                   <div className="text-center mb-8">
                     <h1 className="h2 text-center">custom creations</h1>
@@ -67,7 +67,7 @@ const MainCustomCreations = () => {
 
                   {/* Tabs Section */}
                     {/* <div className="flex space-x-6 border-b border-gray-600 mb-6"> */}
-                    <div className="flex justify-between border-b border-gray-600 mb-6">
+                    <div className="flex flex-wrap justify-center sm:justify-between gap-x-6 gap-y-2 border-b border-gray-600 mb-6">
                       {categories.map((category) => (
                         <button
                           key={category}
@@ -87,12 +87,13 @@ const MainCustomCreations = () => {
                     </div>
 
                     {/* Projects Grid */}
-                      <div className="grid grid-cols-1 items-center justify-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:w-[1312px]">
+                      <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                       {filteredProjects.slice(0, visibleProjects).map((chair) => (
 
                             <Link
                             key={chair.id} // Key goes on the outer element in the map
                             href={`/custom-creations/${chair.id}`}
+                            className="block w-full max-w-[304px] h-full"
                             passHref
                             legacyBehavior={false}
                             >

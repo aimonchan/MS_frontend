@@ -148,6 +148,7 @@
 "use client";
 
 import { useState } from 'react';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import MainButton from './MainButton';
 // Your other imports like motion, etc., can remain if you use them elsewhere.
 
@@ -205,7 +206,7 @@ const ContactUs = () => {
   return (
     <section
       id='cta'
-      className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] py-16 xl:py-0 xl:h-[781px] flex items-center justify-center overflow-hidden bg-black"
+      className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] py-16 xl:min-h-[781px] flex items-center justify-center overflow-hidden bg-black"
     >
       {/* Background image */}
       <div
@@ -217,7 +218,7 @@ const ContactUs = () => {
       <div className="absolute inset-0 bg-black opacity-16"></div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="p-8 rounded-lg max-w-4xl w-full mx-auto">
+        <div className="py-4 sm:p-8 rounded-lg max-w-4xl w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
             {/* Contact Info Section (No changes here) */}
@@ -228,21 +229,23 @@ const ContactUs = () => {
                 Our expert team is ready to discuss your ideas and help you get started.
               </p>
               <div className="mt-6 space-y-4">
-                <div className="flex items-center">
-                  <i className="fas fa-envelope text-accent mr-3"></i>
-                  <span>marketing.team@mspace-deco.com</span>
+                <div className="flex items-start gap-3">
+                  <FaEnvelope className="text-accent mt-1 flex-shrink-0" />
+                  <span className="min-w-0 break-words">marketing.team@mspace-deco.com</span>
                 </div>
-                <div>
-                  <i className="fas fa-phone-alt text-accent mr-3"></i>
-                  <div>(+95) 9449 556 610</div>
-                  <div>(+95) 9449 556 620</div>
-                  <div>(+95) 9449 556 630</div>
-                  <div>(+95) 9449 556 640</div>
-                  <div>(+95) 9449 556 650</div>
-                  <div>(+95) 9449 556 680</div>
+                <div className="flex items-start gap-3">
+                  <FaPhoneAlt className="text-accent mt-1 flex-shrink-0" />
+                  <div>
+                    <div>(+95) 9449 556 610</div>
+                    <div>(+95) 9449 556 620</div>
+                    <div>(+95) 9449 556 630</div>
+                    <div>(+95) 9449 556 640</div>
+                    <div>(+95) 9449 556 650</div>
+                    <div>(+95) 9449 556 680</div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <i className="fas fa-map-marker-alt text-accent mr-3"></i>
+                <div className="flex items-start gap-3">
+                  <FaMapMarkerAlt className="text-accent mt-1 flex-shrink-0" />
                   <span>#5A-1202, Yadanar HninSi Condo,<br />Yadanar Rd, Dagon Seikkan, Yangon, Myanmar.</span>
                 </div>
               </div>

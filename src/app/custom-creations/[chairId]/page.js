@@ -232,7 +232,7 @@ export default function ProjectDetailPage({ params }) {
   return (
     <div>
       <Header />
-      <section className="border border-grayborder mt-[10px] mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:flex xl:flex-col items-center justify-center bg-black">
+      <section className="border border-grayborder mt-[5px] md:mt-[10px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:flex xl:flex-col items-center justify-center bg-black">
 
         {/* Background Image */}
         <div
@@ -242,17 +242,17 @@ export default function ProjectDetailPage({ params }) {
         {/* Black Overlay */}
         <div className="absolute bg-black opacity-16"></div>
 
-        <div className="relative overflow-hidden mx-auto">
-          <div className="flex items-center justify-center mx-auto mt-10 md:hidden">
+        <div className="relative overflow-hidden mx-auto w-full max-w-[1312px]">
+          <div className="flex items-center justify-center mx-auto mt-[110px] px-6 md:hidden">
             <h2 className="text-accent text-center mt-0 mb-4 text-xl sm:text-2xl md:text-3xl font-semibold">
               {chair.title}
             </h2>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 md:gap-8 mb-10 p-6 mt-[150px]">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 mb-10 p-6 md:mt-[150px]">
               
               {/* Image Panel */}
-              <div className="flex flex-col md:flex-row gap-3">
+              <div className="flex flex-col md:flex-row md:justify-center gap-3">
                 <div className="hidden md:flex md:flex-col gap-4 overflow-x-auto">
                   {projectImages.map((img, index) => (
                     <img
@@ -266,20 +266,20 @@ export default function ProjectDetailPage({ params }) {
                     />
                   ))}
                 </div>
-                <div>
+                <div className="w-full max-w-[437px] mx-auto">
                   <img
                     src={selectedImage}
                     alt="Selected Product"
-                    className="rounded-xl shadow-lg w-[437px] h-[530px] object-cover"
+                    className="rounded-xl shadow-lg w-full aspect-[437/530] object-cover"
                   />
                 </div>
-                <div className="flex md:hidden gap-4 overflow-x-auto mx-auto">
+                <div className="flex md:hidden gap-3 w-full justify-center">
                   {projectImages.map((img, index) => (
                     <img
                       key={index}
                       src={img}
                       alt={`View ${index + 1}`}
-                      className={`w-[111px] h-[106px] object-cover rounded-xl border-2 cursor-pointer ${
+                      className={`flex-1 min-w-0 max-w-[111px] aspect-[111/106] object-cover rounded-xl border-2 cursor-pointer ${
                         selectedImage === img ? 'border-blue-500' : 'border-gray-300'
                       }`}
                       onClick={() => setSelectedImage(img)}
@@ -296,7 +296,7 @@ export default function ProjectDetailPage({ params }) {
                   </h2>
                 </div>
                 {chair.description && (
-                  <p className="text-sm md:text-base leading-relaxed text-white text-justify w-[302px] h-[544px] md:w-[563px] md:h-[374px] mx-auto">
+                  <p className="text-sm md:text-base leading-relaxed text-white text-left sm:text-justify w-full max-w-[563px] mx-auto">
                     {chair.description}
                   </p>
                 )}
@@ -311,9 +311,9 @@ export default function ProjectDetailPage({ params }) {
             <h3 className="text-xl md:text-2xl mb-1 text-gray-200 font-medium text-center">
               YOU MIGHT ALSO LIKE
             </h3>
-            <div className="grid grid-cols-1 items-center justify-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:w-[1312px]">
+            <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {relatedProjects.slice(0, visibleProjects).map((relatedChair) => (
-                <Link key={relatedChair.id} href={`/custom-creations/${relatedChair.id}`} passHref>
+                <Link key={relatedChair.id} href={`/custom-creations/${relatedChair.id}`} passHref className="block w-full max-w-[304px] h-full">
                   <CustomProductCard project={relatedChair} />
                 </Link>
               ))}

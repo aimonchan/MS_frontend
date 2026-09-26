@@ -162,7 +162,7 @@ const MySlider = () => {
   };
 
   return (
-    <div className="w-full py-10 px-4">
+    <div className="w-full pt-[120px] md:pt-[160px] pb-10 px-4">
       <div ref={containerRef} className="relative w-full">
         <div className="overflow-hidden">
           {/* REVISED: Added 'gap-4' for consistent spacing */}
@@ -188,7 +188,7 @@ const MySlider = () => {
           <button
             onClick={goToPrev}
             disabled={currentIndex === 0}
-            className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 bg-white rounded-full p-2 shadow-md disabled:opacity-50 disabled:cursor-not-allowed z-10"
+            className="absolute top-1/2 left-2 -translate-y-1/2 bg-white rounded-full p-2 shadow-md disabled:opacity-50 disabled:cursor-not-allowed z-10"
             aria-label="Previous slide"
           >
             <ChevronLeftIcon className="h-6 w-6 text-gray-800" />
@@ -196,7 +196,7 @@ const MySlider = () => {
           <button
             onClick={goToNext}
             disabled={currentIndex >= maxIndex}
-            className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 bg-white rounded-full p-2 shadow-md disabled:opacity-50 disabled:cursor-not-allowed z-10"
+            className="absolute top-1/2 right-2 -translate-y-1/2 bg-white rounded-full p-2 shadow-md disabled:opacity-50 disabled:cursor-not-allowed z-10"
             aria-label="Next slide"
           >
             <ChevronRightIcon className="h-6 w-6 text-gray-800" />

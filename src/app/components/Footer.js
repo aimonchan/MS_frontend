@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-40 mt-[20px] md:h-[647px]">
+    <footer className="bg-black text-gray-300 py-16 md:py-24 mt-[20px]">
       <div className="container mx-auto px-4">
         {/* Footer Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10 md:gap-8 text-center md:text-left">
           
           {/* Product Links */}
           <div>
@@ -40,7 +40,7 @@ const Footer = () => {
               <li className="mb-2"><Link href="/our-services#design-build" className="text-gray-300 hover:text-white">Design & Build</Link></li>
               <li className="mb-2"><Link href="/our-services#interior-design" className="text-gray-300 hover:text-white">Interior Design</Link></li>
               <li className="mb-2"><Link href="/our-services#custom-furniture" className="text-gray-300 hover:text-white">Custom-made Furniture</Link></li>
-              <li className="mb-2"><Link href="home/#cta" className="text-gray-300 hover:text-white">Contact</Link></li>
+              <li className="mb-2"><Link href="/home/#cta" className="text-gray-300 hover:text-white">Contact</Link></li>
               {/* <li className="mb-2"><a href="#">Chat support</a></li> */}
             </ul>
           </div>

@@ -34,7 +34,7 @@ const ServicesSection = () => {
                     - 'place-items-center' will center the cards on mobile (in the single column)
                     - It also ensures content is centered within each grid cell on larger screens.
                 */}
-                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
                     <ServicesCard
                         caption="Design & Build
                         (Turnkey Solution)"

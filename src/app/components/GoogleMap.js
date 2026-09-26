@@ -16,12 +16,12 @@ const Hero = () => {
 
   return (
     <section id='location'
-      className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] xl:h-[781px] lg:h-[781px] md:h-[1000px] h-[1000px] xl:flex xl:flex-col items-center justify-center overflow-hidden flex flex-col md:flex-row"
+      className="border border-grayborder mt-[20px] mx-[5px] md:mx-[17.5px] relative top-0 left-0 right-0 rounded-[20px] py-12 md:py-16 lg:min-h-[781px] flex items-center justify-center overflow-hidden"
       style={{ background: 'linear-gradient(35deg, #171717, #1E2226, #000000)' }}
     >
-      <div className="rounded-lg p-8 md:p-12 lg:p-16 max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+      <div className="w-full max-w-6xl mx-auto px-6 sm:px-8 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Left Section */}
-        <div className="text-white md:w-1/2 mb-8 md:mb-0">
+        <div className="text-white w-full lg:w-1/3">
           <h1 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">
             OUR LOCATION
           </h1>
@@ -55,8 +55,9 @@ const Hero = () => {
         </div>
 
         {/* Right Section (Google Map Embed) */}
-        <div className="w-full h-[484px] md:w-[683px] md:h-[484px]">
+        <div className="w-full lg:w-2/3 h-[320px] sm:h-[400px] lg:h-[484px]">
           <iframe
+            title="Modern Space office location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442.8615216925986!2d96.24592358340423!3d16.81914473092496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c18d52e6538cc9%3A0x45bf256149cc87c!2sYadanar%20Hninsi%20Condo!5e0!3m2!1sen!2ssg!4v1761542599133!5m2!1sen!2ssg"
             width="100%" 
             height="100%" 

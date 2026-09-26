@@ -70,7 +70,7 @@ const MainProjects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           {filteredProjects.slice(0, visibleProjects).map((project) => (
             // Pass href down to the card so it can render the Link internally (handles custom component child issues)
             <ProjectsCard key={project.id} project={project} href={`/projects/${project.id}`} />
