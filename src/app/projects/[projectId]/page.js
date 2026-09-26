@@ -5,7 +5,8 @@ import Footer from '@/app/components/Footer';
 import Cta from '@/app/components/Cta';
 import ProjectGallery from '@/app/components/Projects/ProjectGallery';
 
-import { getProjectById } from '@/lib/MockData.js'; 
+import { getProjectById, projectsData } from '@/lib/MockData.js';
+import { pageMetadata, truncate } from '@/lib/seo';
 
 import {
   FaRegSmile,
@@ -15,6 +16,54 @@ import {
   FaRegClock,
   FaRegCalendarAlt,
 } from 'react-icons/fa';
+
+const detailValue = (project, label) => project.details?.find((d) => d.label === label)?.value;
+
+// Uses the project category, because the "Project Type" detail is wrong for some projects.
+const categoryLabel = {
+  'Offices': 'office interior',
+  'Condos & Apartments': 'residential interior',
+  'Spas & Beauty Saloons': 'spa interior',
+  'Factory': 'factory',
+};
+
+// Built from the structured project details, not the free-text description,
+// because several descriptions in the data are still placeholders.
+function projectDescription(project) {
+  const location = detailValue(project, 'Location') || 'Yangon';
+  const kind = categoryLabel[project.category] || 'interior';
+  const services = detailValue(project, 'Services');
+  const area = detailValue(project, 'Site Area');
+  return truncate(
+    [
+      `${project.title}: ${kind} project by Modern Space in ${location}.`,
+      services && `Services: ${services}.`,
+      area && `Site area: ${area}.`,
+    ].filter(Boolean).join(' ')
+  );
+}
+
+// Pre-render every item at build time so metadata is in the server HTML <head>.
+export function generateStaticParams() {
+  return projectsData.map((item) => ({ projectId: String(item.id) }));
+}
+
+export async function generateMetadata({ params }) {
+  const { projectId } = await params;
+  const project = getProjectById(projectId);
+  if (!project) return {};
+
+  const withLocation = `${project.title} – Project in ${detailValue(project, 'Location') || 'Yangon'}`;
+  return pageMetadata({
+    // Keep the full title (plus " | Modern Space") around 60 characters.
+    title: withLocation.length <= 45 ? withLocation : project.title,
+    description: projectDescription(project),
+    path: `/projects/${project.id}`,
+    images: project.images?.length
+      ? [{ url: project.images[0], alt: `${project.title} by Modern Space` }]
+      : undefined,
+  });
+}
 
 export default async function ProjectDetailPage({ params }) {
   const { projectId } = await params;

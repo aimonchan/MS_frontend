@@ -1,8 +1,27 @@
 import Header from '@/app/components/Header';
 import Cta from '@/app/components/Cta';
 import Footer from '@/app/components/Footer';
-import { getBlogById } from '@/lib/BlogData.js';
+import { blogsData, getBlogById } from '@/lib/BlogData.js';
 import { notFound } from 'next/navigation'; // Import for 404 handling in Next.js
+import { pageMetadata } from '@/lib/seo';
+
+// Pre-render every item at build time so metadata is in the server HTML <head>.
+export function generateStaticParams() {
+  return blogsData.map((item) => ({ blogId: String(item.id) }));
+}
+
+// noindex until the blog has real posts (current data is placeholder content).
+export async function generateMetadata({ params }) {
+  const { blogId } = await params;
+  const blog = getBlogById(blogId);
+  if (!blog) return {};
+  return pageMetadata({
+    title: blog.maintitle,
+    description: `${blog.maintitle}: interior design and furniture ideas from Modern Space in Yangon.`,
+    path: `/blogs/${blog.id}`,
+    noindex: true,
+  });
+}
 
 export default async function BlogDetailPage({ params }) {
   const { blogId } = await params;

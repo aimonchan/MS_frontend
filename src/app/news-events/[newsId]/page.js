@@ -1,8 +1,27 @@
 import Header from '@/app/components/Header';
 import Cta from '@/app/components/Cta';
 import Footer from '@/app/components/Footer';
-import { getNewsById } from '@/lib/NewsData.js';
+import { getNewsById, newsData } from '@/lib/NewsData.js';
 import { notFound } from 'next/navigation'; // Import for 404 handling in Next.js
+import { pageMetadata } from '@/lib/seo';
+
+// Pre-render every item at build time so metadata is in the server HTML <head>.
+export function generateStaticParams() {
+  return newsData.map((item) => ({ newsId: String(item.id) }));
+}
+
+// noindex until this section has real content (current data is placeholder content).
+export async function generateMetadata({ params }) {
+  const { newsId } = await params;
+  const news = getNewsById(newsId);
+  if (!news) return {};
+  return pageMetadata({
+    title: news.maintitle,
+    description: `${news.maintitle}: news and events from Modern Space in Yangon.`,
+    path: `/news-events/${news.id}`,
+    noindex: true,
+  });
+}
 
 export default async function NewsDetailPage({ params }) {
   const { newsId } = await params;
