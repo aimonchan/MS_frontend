@@ -7,6 +7,8 @@ import ProjectGallery from '@/app/components/Projects/ProjectGallery';
 
 import { getProjectById, projectsData } from '@/lib/MockData.js';
 import { pageMetadata, truncate } from '@/lib/seo';
+import { breadcrumbStructuredData } from '@/lib/structuredData';
+import JsonLd from '@/app/components/JsonLd';
 
 import {
   FaRegSmile,
@@ -74,6 +76,10 @@ export default async function ProjectDetailPage({ params }) {
   }
 
   const projectImages = project.images;
+  const crumbs = [
+    { name: 'Projects', path: '/projects' },
+    { name: project.title, path: `/projects/${project.id}` },
+  ];
 
   const iconMap = {
     'Client': FaRegSmile,
@@ -88,6 +94,7 @@ export default async function ProjectDetailPage({ params }) {
 
   return (
     <div>
+      <JsonLd data={breadcrumbStructuredData(crumbs)} />
       <Header />
       <section className="relative border-t border-gray-200 mt-4 md:mt-5 mx-2 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-10 rounded-lg overflow-hidden bg-black text-white">
         

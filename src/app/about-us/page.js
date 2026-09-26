@@ -6,7 +6,11 @@ import Brands from "../components/Brands";
 import TeamMembers from "../components/TeamMembers";
 import Footer from "../components/Footer";
 import OURhistory from "../components/AboutUs/OURhistory";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "@/lib/seo";
+import { breadcrumbStructuredData } from "@/lib/structuredData";
+
+const crumbs = [{ name: 'About Us', path: '/about-us' }];
 
 export const metadata = pageMetadata({
   title: "About Us",
@@ -18,6 +22,7 @@ export const metadata = pageMetadata({
 export default function Home() {
   return (
     <main className="max-w-[1920px] bg-background mx-auto relative overflow-hidden">
+      <JsonLd data={breadcrumbStructuredData(crumbs)} />
       <Header />
 
       <CEOmessage/>
