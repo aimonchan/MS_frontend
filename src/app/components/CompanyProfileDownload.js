@@ -1,6 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { FaDownload } from 'react-icons/fa';
+
+const primaryBtn =
+  'group inline-flex items-center justify-center gap-3 rounded-full bg-accent px-8 py-4 font-tertiary text-base font-bold tracking-wide text-black shadow-[0_8px_24px_rgba(248,149,30,0.35)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#ffa63d] hover:shadow-[0_12px_32px_rgba(248,149,30,0.5)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0';
 
 const inputClass =
   'w-full p-3 rounded-[20px] bg-transparent border border-accent text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent';
@@ -65,8 +69,9 @@ const CompanyProfileDownload = ({ className = '' }) => {
 
   return (
     <>
-      <button type="button" className={`btn ${className}`} onClick={() => setOpen(true)}>
-        Download Company Profile
+      <button type="button" className={`${primaryBtn} ${className}`} onClick={() => setOpen(true)}>
+        <FaDownload className="text-lg transition-transform duration-300 group-hover:translate-y-0.5" aria-hidden="true" />
+        <span>Download Company Profile</span>
       </button>
 
       {open && (
@@ -97,7 +102,7 @@ const CompanyProfileDownload = ({ className = '' }) => {
             {status.state === 'done' ? (
               <div className="mt-4">
                 <p className="text-gray-300">{status.message}</p>
-                <button type="button" onClick={close} className="btn mt-6 w-full">
+                <button type="button" onClick={close} className={`${primaryBtn} mt-6 w-full`}>
                   Close
                 </button>
               </div>
@@ -149,7 +154,7 @@ const CompanyProfileDownload = ({ className = '' }) => {
                 <button
                   type="submit"
                   disabled={status.state === 'sending'}
-                  className="btn w-full disabled:opacity-60 disabled:cursor-not-allowed"
+                  className={`${primaryBtn} w-full`}
                 >
                   {status.state === 'sending' ? 'Preparing...' : 'Download'}
                 </button>
