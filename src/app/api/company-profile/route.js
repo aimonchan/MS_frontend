@@ -1,6 +1,8 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, after } from 'next/server';
 import nodemailer from 'nodemailer';
-import { readFile } from 'node:fs/promises';
+import { createReadStream } from 'node:fs';
+import { stat } from 'node:fs/promises';
+import { Readable } from 'node:stream';
 import path from 'node:path';
 
 export const runtime = 'nodejs';
@@ -79,45 +81,39 @@ export async function POST(request) {
       return NextResponse.json({ message: 'Too many requests. Please try again later.' }, { status: 429 });
     }
 
-    const pdf = await readFile(
-      path.join(process.cwd(), 'private', 'ModernSpace_Company_Profile.pdf')
-    );
+    const pdfPath = path.join(process.cwd(), 'private', 'ModernSpace_Company_Profile.pdf');
+    const { size } = await stat(pdfPath);
 
-    // 1) Lead notification first, so the lead is captured even if delivery fails.
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.CONTACT_EMAIL_RECIPIENT,
-      replyTo: email,
-      subject: 'Company Profile download request',
-      html: `
-        <p>Someone requested the Company Profile from the website:</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-      `,
+    // Lead notification runs after the response is sent, so the download
+    // starts instantly and a mail problem never blocks the visitor.
+    after(async () => {
+      try {
+        await transporter.sendMail({
+          from: process.env.EMAIL_USER,
+          to: process.env.CONTACT_EMAIL_RECIPIENT,
+          replyTo: email,
+          subject: 'Company Profile download request',
+          html: `
+            <p>Someone downloaded the Company Profile from the website:</p>
+            <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+            <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+          `,
+        });
+      } catch (err) {
+        console.error('Lead notification failed:', { email, phone }, err);
+      }
     });
 
-    // 2) Send the PDF to the visitor.
-    await transporter.sendMail({
-      from: `"Modern Space" <${process.env.EMAIL_USER}>`,
-      to: email,
-      subject: 'Modern Space Company Profile',
-      html: `
-        <p>Thank you for your interest in Modern Space Furnishing and Decoration.</p>
-        <p>Our Company Profile is attached to this email.</p>
-        <p>If you would like to discuss a project, just reply to this email or visit
-        <a href="https://www.mspace-deco.com">www.mspace-deco.com</a>.</p>
-        <p>Modern Space Furnishing and Decoration Co., Ltd.</p>
-      `,
-      attachments: [
-        {
-          filename: 'ModernSpace_Company_Profile.pdf',
-          content: pdf,
-          contentType: 'application/pdf',
-        },
-      ],
+    // Stream the file (private/ is not publicly reachable, only this route serves it).
+    return new Response(Readable.toWeb(createReadStream(pdfPath)), {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/pdf',
+        'Content-Length': String(size),
+        'Content-Disposition': 'attachment; filename="ModernSpace_Company_Profile.pdf"',
+        'Cache-Control': 'no-store',
+      },
     });
-
-    return NextResponse.json({ message: 'Check your inbox.' }, { status: 200 });
   } catch (error) {
     console.error('Company profile request failed:', error);
     return NextResponse.json(

@@ -41,11 +41,22 @@ const CompanyProfileDownload = ({ className = '' }) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(data.message || 'Something went wrong.');
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.message || 'Something went wrong.');
+      }
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'ModernSpace_Company_Profile.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
       setStatus({
         state: 'done',
-        message: `We have sent the Company Profile to ${form.email}. Please check your inbox (and spam folder).`,
+        message: 'Thank you! Your download has started. If it does not start, please submit the form again.',
       });
     } catch (err) {
       setStatus({ state: 'error', message: err.message || 'Something went wrong.' });
@@ -93,7 +104,7 @@ const CompanyProfileDownload = ({ className = '' }) => {
             ) : (
               <form onSubmit={handleSubmit} className="mt-4 space-y-4">
                 <p className="text-gray-300 text-sm">
-                  Enter your email and phone number and we will email you our Company Profile (PDF).
+                  Enter your email and phone number to download our Company Profile (PDF).
                 </p>
 
                 {/* Honeypot: hidden from people, bots tend to fill it */}
@@ -140,7 +151,7 @@ const CompanyProfileDownload = ({ className = '' }) => {
                   disabled={status.state === 'sending'}
                   className="btn w-full disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {status.state === 'sending' ? 'Sending...' : 'Send me the Company Profile'}
+                  {status.state === 'sending' ? 'Preparing...' : 'Download'}
                 </button>
               </form>
             )}
