@@ -93,34 +93,6 @@ export const TeamData = [
         'Ms. Thae Su Hlaing is a strategic leader and co-founder, overseeing all design operations and ensuring Modern Space delivers unmatched quality and client-focused interior solutions across every project.',
     },
     {
-      name: 'Mr. Yan Naung Soe',
-      position: 'DESIGN DIRECTOR',
-      imageURL: "../images/Koyan_face.png",
-      description:
-        'Mr. Yan Naung Soe is the creative director, championing innovative architectural design and ensuring technical excellence and artistic integrity are met throughout every Modern Space project.',
-    },
-    {
-      name: 'Ms. Zin Zin',
-      position: 'MARKETING MANAGER',
-      imageURL: "../images/zinzin_face.png",
-      description:
-        "Ms. Zin Zin drives the company's market presence, developing strategic campaigns that highlight Modern Space's unique value and foster strong relationships with key clients and partners.",
-    },
-    {
-      name: 'Ms. Hnin Thandar',
-      position: 'FINANCE MANAGER',
-      imageURL: "../images/Masnow_face.jpg",
-      description:
-        "Ms. Hnin Thandar manages all financial operations, ensuring budgetary stability, strategic resource allocation, and fiscal compliance to support Modern Space's sustained business growth.",
-    },
-    {
-      name: 'Ms. Nilar Cho',
-      position: 'QUANTITY SURVEYOR',
-      imageURL: "../images/Manilar_face.png",
-      description:
-        "Ms. Nilar Cho provides expert cost management, ensuring accurate project estimates, controlling expenses, and maintaining financial viability across all Modern Space construction and fit-out projects.",
-    },
-    {
       name: 'Ms. Wint Yadanar Myat Swe',
       position: 'HR & ADMIN',
       imageURL: "../images/Majue_face.png",
